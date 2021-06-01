@@ -21,7 +21,7 @@ var generatePassword = function () {
   // Password Character Type Confirms
   var uppercase = window.confirm("Would you like your password to include lowercase letters? If yes, please select 'ok.' If not, please select 'cancel.'");
   var lowercase = window.confirm("Would you like your password to include uppercase letters? If yes, please select 'ok.' If not, please select 'cancel.'");
-  var numbers = window.confirm("Would you like your password to include numsbers? If yes, please select 'ok.' If not, please select 'cancel.'");
+  var number = window.confirm("Would you like your password to include numbers? If yes, please select 'ok.' If not, please select 'cancel.'");
   var sChars = window.confirm("Would you like your password to include special characters? If yes, please select 'ok.' If not, please select 'cancel.'");
 
   var pw = '';
@@ -32,8 +32,8 @@ var generatePassword = function () {
   if (uppercase == true) {
     pw += caps;
   }
-  if (numbers == true) {
-    pw += nums;
+  if (number == true) {
+    pw += num;
   }
   if (sChars == true) {
     pw += special;
